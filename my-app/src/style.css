@@ -1,0 +1,107 @@
+/* ---- APP DEFAULT STYLES ---- */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ---- HEADER ---- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #12151a;
+  color: white;
+}
+
+header .left-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .logo img {
+  justify-content: left;
+  width: 100px;
+}
+
+header h2 {
+  justify-content: left;
+  font-size: 24px;
+  margin: 0;
+  color: rgb(79, 219, 219);
+}
+
+.navbar ul {
+  justify-content: right;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+/* ---- LAYOUT FOR STICKY FOOTER ---- */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/src/images/reactjs-icon\ 2.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+/* Content grows & pushes footer down */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #222121;
+  color: white;
+  padding: 20px 40px; /* first one is top/bottom, second one is left/right */
+  font-size: 25px;
+}
+
+ul li::marker{
+  color:  rgb(79, 219, 219);
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
