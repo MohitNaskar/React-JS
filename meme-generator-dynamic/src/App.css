@@ -1,0 +1,42 @@
+.meme-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes left + right apart */
+  padding: 0 20px;
+  height: 80px;
+  background: linear-gradient(90deg, #672280, #A626D3);
+  color: white;
+}
+
+/* group the images together */
+.logo-group {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between the two images */
+}
+
+/* size of each image */
+.meme-logo {
+  width: 50px;
+  height: auto;
+}
+
+/* optional: make second one slightly smaller (remove if not needed) */
+.meme-logo.second {
+  width: 150px;
+
+}
+
+.meme-title {
+  margin-left: 14px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.meme-nav.project-title h2{
+  margin-left: 14px;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 100vh;
+}
